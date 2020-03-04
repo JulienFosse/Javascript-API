@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.notes {
+  height: 300px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px 40px 0 40px;
+  display: flex;
+  justify-content: space-evenly;
+
+  .blanc {
+    border: solid 2px;
+    flex: 1; //partage la largeur = width: calc(100% / 8);
+    &:hover {
+      box-shadow: 10px 5px 5px grey;
+    }
+  }
+
+  .noir {
+    border: solid 2px;
+    background-color: black;
+    flex: 1; //partage la largeur = width: calc(100% / 8);
+    &:hover {
+      box-shadow: 10px 5px 5px grey;
+    }
+  }
+}
